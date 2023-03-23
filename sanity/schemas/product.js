@@ -35,9 +35,29 @@ export default {
         maxLength: 96,
       },
     },
+    // {
+    //   name: 'brand',
+    //   title: 'Brand',
+    //   type: 'string',
+    // },
     {
-      name: 'brand',
-      title: 'Brand',
+      name: 'sex',
+      title: 'Sex',
+      type: 'string',
+    },
+    {
+      name: 'age',
+      title: 'Age',
+      type: 'string',
+    },
+    {
+      name: 'height',
+      title: 'Height',
+      type: 'string',
+    },
+    {
+      name: 'lifespan',
+      title: 'Lifespan',
       type: 'string',
     },
     {
