@@ -113,6 +113,7 @@ const classes = {
   },
   searchButton: {
     backgroundColor: '#f8c040',
+    color:'green',
     padding: 1,
     // borderRadius: '0 5px 5px 0',
     borderRadius: 5,
