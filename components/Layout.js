@@ -22,6 +22,16 @@ import {
   Typography,
   useMediaQuery,
 } from '@mui/material';
+import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
+import HomeIcon from '@mui/icons-material/Home';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import SubdirectoryArrowLeftIcon from '@mui/icons-material/SubdirectoryArrowLeft';
+import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import CancelIcon from '@mui/icons-material/Cancel';
@@ -160,7 +170,7 @@ export default function Layout({ title, description, children }) {
               onClose={sidebarCloseHandler}
             >
               <List>
-                <ListItem>
+                <ListItem sx={classes.categorysort} >
                   <Box
                     display="flex"
                     alignItems="center"
@@ -171,7 +181,7 @@ export default function Layout({ title, description, children }) {
                       aria-label="close"
                       onClick={sidebarCloseHandler}
                     >
-                      <CancelIcon />
+                      <CancelIcon sx={classes.clossbar} />
                     </IconButton>
                   </Box>
                 </ListItem>
@@ -276,11 +286,33 @@ export default function Layout({ title, description, children }) {
             </Box>
           </Toolbar>
         </AppBar>
+        <Typography sx={classes.customercare} >
+           🔔 Customer Care :<WhatsAppIcon sx={classes.whatsapp} /> +546(435) 67889  🔔<ArrowRightAltIcon/> <NextLink NextLink href="/about" passHref><Link>About Us</Link></NextLink>
+        </Typography>
         <Container component="main" sx={classes.main}>
           {children}
         </Container>
         <Box component="footer" sx={classes.footer}>
-          <Typography>All rights reserved. Sanity Amazona.</Typography>
+        <Typography>Email:<MarkEmailReadIcon/> suppups@gmail.com</Typography>
+          <Typography>Location:<LocationOnIcon/> Located in Brooklyn, New York.</Typography>
+          <Typography>Address:<HomeIcon/> 1690 80th street Brooklyn NY 11214</Typography>
+          {/* <Typography>All rights reserved. Sanity Amazona.</Typography> */}
+          <NextLink href="/" passHref>
+             <Link>
+              <FacebookIcon sx={classes.facebook} />
+            </Link>
+          </NextLink>
+          <NextLink href="hgghjkkkk" target='_blank' passHref>
+             <Link>
+             <InstagramIcon sx={classes.instagram} />
+            </Link>
+          </NextLink>
+          <NextLink href="FFFGJdhj" passHref>
+             <Link>
+             <TwitterIcon sx={classes.twitter} />
+            </Link>
+          </NextLink>
+          <Typography>All rights reserved SupPupps 2023.</Typography>
         </Box>
       </ThemeProvider>
     </>
