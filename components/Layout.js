@@ -170,7 +170,7 @@ export default function Layout({ title, description, children }) {
               onClose={sidebarCloseHandler}
             >
               <List>
-                <ListItem sx={classes.categorysort} >
+                <ListItem sx={classes.categorysort}>
                   <Box
                     display="flex"
                     alignItems="center"
